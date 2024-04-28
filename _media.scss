@@ -1,0 +1,278 @@
+@media (wax-width: 1500px) {
+  .pull-menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 12%;
+  }
+
+  .subscribe {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .img_back {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__left_right_wrapper {
+      gap: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &__left {
+      gap: 15px;
+    }
+
+    &__right {
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .hamburger input:checked ~ .pull-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1160px) {
+  .categories {
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: 235px 160px;
+  }
+
+  .subscribe {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .img_back {
+      width: 100%;
+      object-fit: fill;
+    }
+
+    &__left_right_wrapper {
+      gap: 50px;
+      padding-top: 20px;
+      padding-bottom: 5px;
+    }
+
+    &__left {
+      gap: 10px;
+    }
+
+    &__right {
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 1139px) {
+  .center {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Стили для планшета */
+  .center {
+    padding-left: calc(50% - $tabletWidthSite/2);
+    padding-right: calc(50% - $tabletWidthSite/2);
+  }
+
+  .promo {
+    padding-left: calc(50% - 386px);
+    padding-right: calc(50% - 386px);
+
+    &__heading {
+      margin-bottom: 0;
+    }
+
+    &__heading_h1 {
+      font-size: 44px;
+    }
+
+    &__heading_h2 {
+      font-size: 24px;
+    }
+  }
+
+  .categories {
+    padding-top: 65px;
+    grid-template-columns: repeat(3, 232px);
+    grid-template-rows: 168px 116px;
+    gap: 20px;
+  }
+
+  .featured_items {
+    padding-top: 110px;
+    padding-bottom: 71px;
+
+    &__heading {
+      margin-bottom: 3.3px;
+    }
+  }
+
+  .catalog {
+    gap: 16px;
+    padding-top: 73px;
+    padding-bottom: 32px;
+  }
+
+  .advantages {
+    @include flexColumnCenterCenter();
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+
+  .advantage {
+    width: auto;
+  }
+
+  .subscribe {
+    min-height: 614px;
+
+    .img_back {
+      width: 100%;
+      object-fit: fill;
+    }
+
+    &__left_right_wrapper {
+      flex-direction: column;
+      gap: 48px;
+      padding-top: 64px;
+      padding-bottom: 140px;
+    }
+
+    &__left {
+      text-align: center;
+    }
+
+    &__right {
+      gap: 27px;
+      text-align: center;
+    }
+
+    &__right__text {
+      line-height: 162%;
+    }
+
+    .form__input {
+      margin-right: -67px;
+    }
+
+    .form__button {
+      z-index: 1;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  /* Стили для мобильных телефонов */
+  .center {
+    padding-left: calc(50% - $mobileWidthSite/2);
+    padding-right: calc(50% - $mobileWidthSite/2);
+  }
+
+  .desktop_tablet_none {
+    display: block;
+  }
+
+  .cellphone_none {
+    display: none;
+  }
+
+  .promo {
+    padding: 148px 0;
+    @include flexColumnCenterCenter();
+
+    &__heading_h1 {
+      font-size: 38px;
+    }
+
+    &__heading_h2 {
+      font-size: 20px;
+    }
+
+    & img {
+      display: none;
+    }
+  }
+
+  .categories {
+    padding-top: 64px;
+    grid-template-columns: 343px;
+    grid-template-rows: none;
+    gap: 32px;
+
+    .big {
+      grid-area: auto;
+    }
+  }
+
+  .featured_items {
+    padding-top: 64px;
+    padding-bottom: 85px;
+  }
+
+  .catalog {
+    gap: 16px;
+    padding-top: 65px;
+    padding-bottom: 41px;
+  }
+
+  .advantages {
+    gap: 46px;
+    padding-top: 48px;
+    padding-bottom: 81px;
+  }
+
+  .advantage {
+    gap: 19px;
+  }
+
+  .subscribe {
+    min-height: 550px;
+
+    &__left_right_wrapper {
+      padding-top: 64px;
+      padding-bottom: 110px;
+      gap: 59px;
+    }
+
+    .quotation {
+      font-size: 18px;
+    }
+
+    &__right {
+      gap: 22px;
+
+      &__text {
+        line-height: 153.2%;
+      }
+
+      &__text h3 {
+        font-size: 14px;
+      }
+    }
+
+    .form__input {
+      margin-right: -70px;
+    }
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 0 9px 0;
+  }
+
+  .social_media_icons {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
