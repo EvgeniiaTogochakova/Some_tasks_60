@@ -320,6 +320,132 @@ a {
   }
 }
 
+.cart_items {
+  background-color: $colorWhite;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  display: none;
+
+  &__heading {
+    font-size: 30px;
+    color: $colorDark;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+    width: 652px;
+    margin-bottom: 30px;
+
+    img {
+      width: 262px;
+    }
+
+    &__card {
+      padding-top: 22px;
+      padding-left: 31px;
+      padding-bottom: 62px;
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+
+      h3 {
+        font-size: 24px;
+        font-weight: normal;
+        color: $colorDark;
+      }
+
+      svg {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+
+        &:hover path {
+          fill: $colorSelectSite;
+        }
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .sort__details {
+          position: relative;
+
+          summary {
+            font-size: 22px;
+            font-weight: normal;
+            color: #ef5b70;
+            @include flexAlignItemsCenter(flex-start);
+            gap: 10px;
+
+            &::webkit-details-marker {
+              display: none;
+            }
+          }
+        }
+
+        .sort__size-box {
+          position: absolute;
+          z-index: 1;
+          display: flex;
+          justify-content: center;
+          gap: 6px;
+          box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+          padding: 8px 30px 12px 9px;
+          background-color: $colorWhite;
+          left: 50px;
+          top: 0px;
+          font-weight: 400;
+          font-size: 10px;
+          color: #6f6e6e;
+        }
+        p {
+          font-size: 22px;
+          font-weight: normal;
+          color: #575757;
+
+          .price_value {
+            color: #ef5b70;
+          }
+
+          .color_size_quantity_value {
+            color: #6f6e6e;
+          }
+        }
+
+        #quantity1,
+        #quantity2 {
+          font-size: 22px;
+          font-weight: normal;
+          color: #6f6e6e;
+          width: 44px;
+          height: 25px;
+          margin-left: 24px;
+          text-align: center;
+          appearance: none;
+          border: solid 1px #eaeaea;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
 .subscribe {
   position: relative;
   display: flex;

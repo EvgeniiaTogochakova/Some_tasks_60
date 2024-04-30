@@ -1,12 +1,12 @@
 
-# JavaScript sequel. Workshop 6. Homework. 
+# JavaScript sequel. Workshop 7. Homework. 
  
-Дан макет сайта https://www.figma.com/file/mnLY69cYE5cqWM5w6n5hXx/Seo-%26-Digital-Marketing-Landing-Page?node-id=190%3A1194&t=q4NMnXTnwyyTSGA6-0
+Дан макет сайта https://www.figma.com/file/mnLY69cYE5cqWM5w6n5hXx/Seo-%26-Digital-Marketing-Landing-Page?node-id=4203%3A2&t=q4NMnXTnwyyTSGA6-0
 
-В блоке Featured Items небходимо реализовать шаблон товаров.
+На предыдущем уроке вы сформировали данные из раздела "Товары".
 
-Для этого необходимо создать json формат данных по всем товарам.
+При клике на кнопку add to cart у товара под блоком с акциями появляется раздел Cart items.
 
-Из этого файла сформировать блок Featured Items.
+В разделе Cart items появляются товары, добавленные в корзину,
 
-Всю вёрстку остальных частей реализовывать не нужно; если она была сделана на html/css, ее можно использовать, заново создавать не требуется.
+При клике на крестик, товар удаляется из из раздела корзины, если удалить все товары, раздел полностью пропадает.

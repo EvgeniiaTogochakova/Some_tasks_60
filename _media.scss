@@ -133,6 +133,21 @@
     width: auto;
   }
 
+  .cart_items {
+    padding-top: 60px;
+
+    &__item {
+      width: 600px;
+      margin-bottom: 20px;
+      img {
+        width: 200px;
+      }
+      svg {
+        right: 24px;
+      }
+    }
+  }
+
   .subscribe {
     min-height: 614px;
 
@@ -233,6 +248,67 @@
 
   .advantage {
     gap: 19px;
+  }
+
+  .cart_items {
+    padding-top: 40px;
+    padding-bottom: 96px;
+
+    &__heading {
+      font-size: 22px;
+    }
+
+    &__items {
+      gap: 32px;
+    }
+
+    &__item {
+      width: 360px;
+      margin-bottom: 10px;
+      img {
+        width: 120px;
+        height: auto;
+      }
+
+      &__card {
+        padding-top: 14px;
+        padding-left: 17px;
+        padding-bottom: 38px;
+        gap: 26px;
+
+        h3 {
+          font-size: 16px;
+        }
+
+        svg {
+          top: 17px;
+          right: 12px;
+          width: 10px;
+        }
+
+        &__info {
+          gap: 4px;
+
+          .sort__details {
+            summary {
+              font-size: 14px;
+            }
+          }
+
+          p {
+            font-size: 14px;
+          }
+
+          #quantity1,
+          #quantity2 {
+            font-size: 10px;
+            width: 23px;
+            height: 14px;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
   }
 
   .subscribe {
